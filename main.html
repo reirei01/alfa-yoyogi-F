@@ -33,7 +33,7 @@
         <!-- STAGE1問題セクション　ここから -->
         <section class="section">
           <div class="container">
-            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>さぁゲームを始めよう！</h2>
+            <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：1</span>レシピ本を見つけよう！</h2>
             <p class="text-center">しょう：作り始めようとしたんだけど、レシピの場所がわからないよ〜〜〜！ママーどこにあるか知らない？<br>
               ママ：ふふふおじいちゃんいたずら好きだったでしょ？孫を楽しませたいからってこの家のどこかに隠したみたいなの、<br>
 　　　　　　　　だから、ママもどこにあるかはわからないの。でも、この紙をしょうにあげるわ頑張って謎を解きましょうね！</p>
@@ -85,8 +85,8 @@ Youtube貼り付けここまで -->
         <section v-if="clear['stage1']" v-bind:class="{isClear:clear['stage1']}"  class="section section--clear bg-color--gray">
           <div class="container">
             <div class="clear-message">
-              <div class="clear-message__title">STAGE：１  クリア！</div>
-              <div class="clear-message__content">早く、くつばこに行こう！<br>
+              <div class="clear-message__title">STAGE：クリア！</div>
+              <div class="clear-message__content">早く靴箱に行こう！<br>
                 時間がない！</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
@@ -106,10 +106,11 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：2</span>レシピ本を見つけよう！</h2>
+              <p class="text-center">しょう：靴箱についたは良いけど、靴箱のどこにあるかわからないよ〜〜<br>
+                むむ！これは・・・？！<br>
+                すぐに目に入ったのは一枚の紙切れ<br>
+                これらを解くことで、きっとレシピ本が見つかるはずだ！</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -151,8 +152,9 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：2　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">答えはねこだ！<br>
+                ねこの置物の中にはレシピ本が隠されていた<br>
+              　これでやっとお菓子が作れる！</div>
                 <button v-on:click="nextStage('stage2')" onclick="location.href='#sectionStage3'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -167,10 +169,13 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：3</span>お菓子を作ろう！</h2>
+              <p class="text-center">しょう：よし！レシピ本も見つかったし、早速作り始めるぞー！<br>
+                スノーボールクッキーを作るのか！よし、がんばるぞー！！<br>
+                えっと…まずはバターを室温で柔らかくして、クリーム状に練るっと<br>
+                その次は、レンジの温度を●●●度にして・・・<br>
+                ん！？なんでここ読めないの！？<br>
+                この付箋はなんだ・・・？</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
@@ -204,8 +209,9 @@ Youtube貼り付けここまで -->
           <div class="container">
             <div class="clear-message">
               <div class="clear-message__title">STAGE：3　クリア！</div>
-              <div class="clear-message__content">黒板の指示に従い、<br>
-                次のステージの謎を解こう！</div>
+              <div class="clear-message__content">170度だったのか。<br>
+                相当古いレシピ本だから、読めないところがあってもしょうがないか。<br>
+                まぁ次に進もう！</div>
                 <button v-on:click="nextStage('stage3')" onclick="location.href='#sectionStage4'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -220,10 +226,15 @@ Youtube貼り付けここまで -->
         <section>
           <div class="section">
             <div class="container">
-              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>黒板に書かれている謎を解け！</h2>
-              <p class="text-center">家庭科室に入ることができた！<br>
-                すぐに目に入ったのは黒板にある４つの謎。<br>
-                これらを解くことで、きっと次のステップに繋がるはずだ！</p>
+              <h2 class="section-title section-title--keycolorlight"><span class="section-title__stage">STAGE：4</span>お菓子を作ろう！</h2>
+              <p class="text-center">しょう：で、その次は…粉類をふるい、全ての材料を混ぜる。<br>
+                生地を30等分にわけて、丸めて鉄板にのせてっと！んで、170度で15〜25分焼く。<br>
+                焦げない程度に長く焼くとサクサクになるのか！<br>
+                焼きたてはまだ柔らかいから、触っちゃいけないんだ！気をつけないと！<br>
+                で、冷めてかたくなったら、仕上げに粉砂糖をまぶすのか。<br>
+　　　　　　　　　 じゃあ今のうちに砂糖を用意しとかなきゃ！<br>
+                あっあれ？これ、どれが砂糖だ・・・？　<br>
+                わからない！どうしよ〜〜〜</p>
             </div>
           </div>
           <div class="stage-column__container section bg-color--keycolor">
